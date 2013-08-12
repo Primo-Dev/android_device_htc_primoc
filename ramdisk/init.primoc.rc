@@ -188,6 +188,13 @@ service iprenew_bnep0 /system/bin/dhcpcd -n
     disabled
     oneshot
 
+# Bugreport is triggered by the KEY_VOLUMEUP and BTN_MOUSE keycodes
+service bugreport /system/bin/bugmailer.sh -v
+    class main
+    disabled
+    oneshot
+    keycodes 114 115 116
+
 # Compass and accelerometer daemon
 service akmd /system/bin/akmd
     class main
