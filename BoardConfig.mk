@@ -64,11 +64,11 @@ BOARD_FLASH_BLOCK_SIZE := 262144
 TARGET_RELEASETOOLS_EXTENSIONS := device/htc/common
 
 # Kernel
-TARGET_KERNEL_SOURCE := kernel/htc/awidkernel
+TARGET_KERNEL_SOURCE := kernel/htc/primoc
 TARGET_KERNEL_CONFIG := primoc_defconfig
 #TARGET_PREBUILT_KERNEL := device/htc/primoc/prebuilt/root/kernel
 BUILD_KERNEL := true
-TARGET_ARM_EABI_GCC_VERSION := 4.8
+TARGET_KERNEL_CUSTOM_TOOLCHAIN := arm-eabi-4.4.3
 
 # Recovery
 TARGET_RECOVERY_FSTAB := device/htc/primoc/ramdisk/fstab.primoc
