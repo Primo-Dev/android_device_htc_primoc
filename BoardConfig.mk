@@ -74,8 +74,9 @@ TARGET_KERNEL_CUSTOM_TOOLCHAIN := arm-eabi-4.4.3
 TARGET_RECOVERY_FSTAB := device/htc/primoc/ramdisk/fstab.primoc
 RECOVERY_FSTAB_VERSION := 2
 
-# PMEM
-TARGET_USES_PMEM := true
+# ION
+TARGET_USES_ION := true
+BOARD_HAVE_OLD_ION_API := true
 
 # File System
 BOARD_HAS_LARGE_FILESYSTEM := true
