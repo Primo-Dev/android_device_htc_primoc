@@ -42,6 +42,9 @@ BOARD_VENDOR_QCOM_GPS_LOC_API_AMSS_VERSION := 50000
 
 TARGET_PROVIDES_LIBLIGHTS := true
 
+# Target specific overrides
+TARGET_SPECIFIC_HEADER_PATH := device/htc/primoc/overlay/include 
+
 TARGET_NO_HW_VSYNC := true
 
 # cat /proc/emmc
